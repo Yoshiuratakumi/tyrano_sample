@@ -74,10 +74,6 @@ END2　助けられなかった友[l]
 
 [jump target=*here]
 
-*tag_run
-
-*man_lab
-
 *tag_dream
 
 そうだ。これは夢だ。[l][r]
