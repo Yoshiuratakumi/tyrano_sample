@@ -7,7 +7,7 @@
 
 「怪物の家」[l][r]
 
-[bg storage=pexels-jimbear-1309902.jpg time=500]
+[bg storage=jail.jpg time=500]
 
 見慣れない天井、黒ずんだ壁。[l]
 何年も掃除をしていないのだろうか、床は赤茶色に錆びれている。[l][r]
@@ -16,6 +16,8 @@
 足には鎖が巻かれている。[1][r]
 
 うう、ここはどこだ。[l][r]
+
+*here
 
 [link target=*tag_lab] →研究所 [endlink][r]
 [link target=*tag_lab] →檻の中 [endlink][r]
@@ -27,10 +29,9 @@
 「やあ、気分はどうだ。兄弟」[l]
 白い肌をひらつかせ、歪んだ目玉が飛び出ている化け物が上の階から降りてきた。[l]
 心の底から不快感を感じる。
-[link targot=*place_lab] →「ここはどこだ？」 [endlink][r]
-[link targot=*man_lab] →「お前は誰だ？」 [endlink][r]
-[link targot=*chain_lab] →「鎖を外せ！」 [endlink][r]
-[link targot=*horrible_lab] →「最悪だぜ、お前のおかげでな！」 [endlink][r]
+[link target=*place_lab] →「ここはどこだ？」 [endlink][r]
+[link target=*man_lab] →「お前は誰だ？」 [endlink][r]
+[link target=*horrible_lab] →「最悪だぜ、お前のおかげでな！」 [endlink][r]
 [s]
 
 *place_lab
@@ -49,7 +50,7 @@
 END1　夢落ち？[l]
 [cm]
 
-[jump targot=*start]
+[jump target=*here]
 
 *tag_run
 
@@ -65,22 +66,62 @@ END1　夢落ち？[l]
 
 「死ぬときは一緒だぜ。相棒」[l][r]
 
-みるみるうちに意識が遠のいていく、、
+みるみるうちに意識が遠のいていく、、[l][r]
 
 【 BAD END 】[l]
 END2　助けられなかった友[l]
 [cm]
 
-[jump targot=*start]
+[jump target=*here]
 
 *tag_run
 
 *man_lab
 
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+*tag_dream
 
-【 GOOD END 】[l][cm]
+そうだ。これは夢だ。[l][r]
+
+何者かに薬を打たれた記憶が思い出される。[l][r]
+
+きっと睡眠薬を打たれたに違いない。[l]
+
+「やあ、気分はどうだ。兄弟」[l]
+白い肌をひらつかせ、歪んだ目玉が飛び出ている化け物が上の階から降りてきた。[l]
+夢の中なら、化け物を殺したって許されるだろう。[l][r]
+
+[link target=*tag_kill]  →　殺す
+
+*tag_kill
+
+無我夢中で、その化け物を殴る[l]
+
+「はは、君は怪物に成り果ててしまったんだな」[l]
+
+そういうとその博士は、悲しそうに息絶えた。[l]
+
+"watanabe"?[l]
+
+どうやら、この博士の名前のようだ[l][r]
+
+しかし、そんなことはどうでも良い。[l]
+
+あとは夢から醒めるのを待つだけだ。[l][r]
+
+フオーーーン[l]
+
+急にけたたましい音のサイレンが鳴り響く。[l]
+
+天井の通気口から、何かが噴き出し見る見るうちに取り囲まれる。[l]
+
+もう意識はない。[l]
+
+しかしかすかに聞こえる。[l]
+
+やれやれ、また失敗だ。[l][r]
+
+【 BAD END 】[l]
+END3　また失敗[l]
+[cm]
 
 [jump target=*start]
